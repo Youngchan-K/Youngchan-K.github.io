@@ -52,7 +52,7 @@ p {
 
 .sidebar-wrapper {
   background: #4B6A78;
-  position: absolute;
+  position: left;
   right: 0;
   width: 240px;
   height: 100%;
