@@ -281,20 +281,6 @@ p {
   color: #fb866a;
 }
 
-.resume-timeline-item-desc {
-  flex: 1;
-}
-
-.resume-company-description {
-  margin-top: 1rem;
-  display: block;
-  clear: both;
-}
-
-.resume-timeline-item-header {
-  min-height: 150px; /* Adjust this value as needed */
-}
-
 @media (max-width: 767.98px) {
   .sidebar-wrapper {
     position: static;
