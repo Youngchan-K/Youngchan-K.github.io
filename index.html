@@ -67,7 +67,7 @@
                             <h3 class="job-title">Pohang University of Science and Technology (POSTECH)</h3>
                             <div class="time">Mar. 2022 - Feb. 2024</div>
                         </div><!--//upper-row-->
-                        <div class="company" style="font-size:13px"><i>MS in Graudate School of Artificial Intelligence</i></div>
+                        <div class="company"><i>MS in Graudate School of Artificial Intelligence</i></div>
                     </div><!--//meta-->
                 </div><!--//item-->
 
@@ -77,7 +77,7 @@
                             <h3 class="job-title">Yonsei University</h3>
                             <div class="time">Mar. 2016 - Feb. 2022</div>
                         </div><!--//upper-row-->
-                        <div class="company" style="font-size:13px"><i>BS in Mathematics & Electrical and Electronic Engineering</i></div>
+                        <div class="company"><i>BS in Mathematics & Electrical and Electronic Engineering</i></div>
                     </div><!--//meta-->
                 </div><!--//item-->
                 
@@ -93,13 +93,13 @@
                             <h3 class="job-title">Beeble</h3>
                             <div class="time">Apr. 2024 - Present</div>
                         </div><!--//upper-row-->
-                        <div class="company" style="font-size:13px"><i>ML Engineer</i></div>
+                        <div class="company"><i>ML Engineer</i></div>
                     </div><!--//meta-->
                     <div class="details">
                         <p>
-                            > Improve the human portrait relighting model with advanced PBR texture and depth map extraction algorithm<br>
-                            > Develop a human-centric monocular depth estimation model based on the perspective camera assumption<br>
-                            > Build a synthetic clothed human rendering pipeline with control over texture, shape, pose, camera, and lighting<br>
+                            >  Improve the human portrait relighting model with advanced PBR texture and depth map extraction algorithm<br>
+                            >  Develop a human-centric monocular depth estimation model based on the perspective camera assumption<br>
+                            >  Build a synthetic clothed human rendering pipeline with control over texture, shape, pose, camera, and lighting<br>
                         </p>
                     </div><!--//details-->
                 </div><!--//item-->
@@ -112,27 +112,76 @@
 
                 <h3 class="section-title"><i>[Computer Vision & Computer Graphics]</i></h3>
 
-                <tr>
-                    <td style="padding:20px; width:25%; vertical-align:middle">
-                        <div>
-                            <img width="150" src="assets/images/PolarData.PNG">
+                <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
+                    <td style="padding:20px;width:25%;vertical-align:middle">
+                      <div class="one">
+                        <div class="two" id='nuvo_image'><video  width=100% muted autoplay loop>
+                        <source src="images/nuvo.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                        </video></div>
+                        <img src='images/nuvo.jpg' width=100%>
+                      </div>
+                      <script type="text/javascript">
+                        function nuvo_start() {
+                          document.getElementById('nuvo_image').style.opacity = "1";
+                        }
+              
+                        function nuvo_stop() {
+                          document.getElementById('nuvo_image').style.opacity = "0";
+                        }
+                        nuvo_stop()
+                      </script>
+                    </td>
+                    <td style="padding:20px;width:75%;vertical-align:middle">
+                      <a href="https://pratulsrinivasan.github.io/nuvo/">
+                        <span class="papertitle">Nuvo: Neural UV Mapping for Unruly 3D Representations</span>
+                      </a>
+                      <br>
+                      <a href="https://pratulsrinivasan.github.io/">Pratul Srinivasan</a>,
+                      <a href="http://stephangarbin.com/">Stephan J. Garbin</a>,
+                      <a href="https://dorverbin.github.io/">Dor Verbin</a>,
+                      <strong>Jonathan T. Barron</strong>,
+                      <a href="https://bmild.github.io/">Ben Mildenhall</a>
+                      <br>
+                      <em>ECCV</em>, 2024
+                      <br>
+                      <a href="https://pratulsrinivasan.github.io/nuvo/">project page</a>
+                      /
+                      <a href="https://www.youtube.com/watch?v=hmJiOSTDQZI">video</a>
+                      /
+                      <a href="http://arxiv.org/abs/2312.05283">arXiv</a>
+                      <p></p>
+                      <p>
+                      Neural fields let you recover editable UV mappings for the challenging geometries produced by NeRF-like models.
+                      </p>
+                    </td>
+                  </tr>
+
+                  
+                <article class="resume-timeline-item position-relative pb-4">
+                    <div class="resume-timeline-item-header mb-2">
+                        <td style="padding:20px;width:25%;vertical-align:middle">
+                        <div class="d-flex flex-column flex-md-row">
+                            <div class="resume-timeline-item-desc mx-2">
+                            <img width="150" src="assets/images/PolarData.PNG" alt="image">
                         </div>
-                    </td>
-                    <td style="padding:20px; width:75%; vertical-align:middle">
-                        <div class="resume-position-title font-weight-bold mb-1" style="font-size:16px">
-                            <b>Spectral and Polarization Vision: Spectro-polarimetric Real-world Dataset</b></div><br>
-                        <div style="font-size:13px">
-                            Yujin Jeon*, Eunsue Choi*, <b>Youngchan Kim</b>, Yunseong Moon, Khalid Omer, Felix Heide, Seung-Hwan Baek</div><br>
-                        <div class="resume-company-name mt-1"><i>CVPR 2024 (highlight)</i></div><br>
-                        <ul>
-                            <li class="list-inline-item"><span class="badge badge-dark"><a href="https://eschoi.com/SPDataset/" style="font-size:13px">Project page</a></span></li>
-                            <li class="list-inline-item"><span class="badge badge-dark"><a href="https://arxiv.org/abs/2311.17396" style="font-size:13px">Paper</a></span></li>
-                            <li class="list-inline-item"><span class="badge badge-dark"><a href="https://huggingface.co/datasets/jyj7913/spectro-polarimetric" style="font-size:13px">Data</a></span></li>
-                        </ul>
-                        <div style="font-size:13px">
-                            <i>Real-world datasets that include both linear and circular polarization across multiple spectral channels</i></div>
-                    </td>
-                </tr>
+                        </td>
+                        <td style="padding:20px;width:75%;vertical-align:middle">
+                        <div class="resume-timeline-item-desc mx-2">
+                            <div class="resume-position-title font-weight-bold mb-1" style="font-size:16px"><b>Spectral and Polarization Vision: Spectro-polarimetric Real-world Dataset</b></div>
+                            <div style="font-size:13px">Yujin Jeon*, Eunsue Choi*, <b>Youngchan Kim</b>, Yunseong Moon, Khalid Omer, Felix Heide, Seung-Hwan Baek</div>
+                            <div class="resume-company-name mt-1"><i>CVPR 2024 (highlight)</i></div>
+                            <ul class="list-inline mt-2">
+                                <li class="list-inline-item"><span class="badge badge-dark"><a href="https://eschoi.com/SPDataset/" style="font-size:13px">Project page</a></span></li>
+                                <li class="list-inline-item"><span class="badge badge-dark"><a href="https://arxiv.org/abs/2311.17396" style="font-size:13px">Paper</a></span></li>
+                                <li class="list-inline-item"><span class="badge badge-dark"><a href="https://huggingface.co/datasets/jyj7913/spectro-polarimetric" style="font-size:13px">Data</a></span></li>
+                            </ul>
+                            <div style="font-size:13px"><i>> Real-world datasets that include both linear and circular polarization across multiple spectral channels</i></div>
+                            </div>
+                        </div>
+                        </td>
+                    </div>
+                </article>
 
                 <article class="resume-timeline-item position-relative pb-4">
                     <div class="resume-timeline-item-header mb-2">
@@ -151,10 +200,10 @@
                                     <li class="list-inline-item"><span class="badge badge-dark"><a href="https://github.com/youngchan-k/NeSpoF" style="font-size:13px">Code</a></span></li>
                                     <li class="list-inline-item"><span class="badge badge-dark"><a href="https://drive.google.com/drive/folders/1W7apuXPA3EkyUs8VgZgwdMpnc96aLXXJ" style="font-size:13px">Data</a></span></li>
                                 </ul>
+                                <div style="font-size:13px"><i>> Neural representation that models the physically-valid hyperspectral Stokes vector at given position and direction</i></div>
                             </div>
                         </div>
                     </div>
-                    <div style="font-size:13px"><i>> Neural representation that models the physically-valid hyperspectral Stokes vector at given position and direction</i></div>
                 </article>
                 
 
@@ -174,10 +223,10 @@
                                     <li class="list-inline-item"><span class="badge badge-dark"><a href="assets/pdf/AMPER.pdf" style="font-size:13px">Paper</a></span></li>
                                     <li class="list-inline-item"><span class="badge badge-dark"><a href="assets/pdf/AMPER_slide.pdf" style="font-size:13px">Slide</a></span></li>
                                 </ul>
+                                <div style="font-size:13px"><i>> General Digital Me algorithm to manage the individual's state and provide recommendations</i></div>
                             </div>
                         </div>  
                     </div>
-                    <div style="font-size:13px"><i>> General Digital Me algorithm to manage the individual's state and provide recommendations</i></div>
                 </article>
 
             </section>
